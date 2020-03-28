@@ -34,6 +34,41 @@
       <Platform>x86</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractScene.cpp" />
+    <ClCompile Include="CalcUtils.cpp" />
+    <ClCompile Include="Define.cpp" />
+    <ClCompile Include="Fps.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="Looper.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MenuButton.cpp" />
+    <ClCompile Include="TouchEvent.cpp" />
+    <ClCompile Include="Parameter.cpp" />
+    <ClCompile Include="SystemMain.cpp" />
+    <ClCompile Include="TitleScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractScene.h" />
+    <ClInclude Include="CalcUtils.h" />
+    <ClInclude Include="Context.h" />
+    <ClInclude Include="Define.h" />
+    <ClInclude Include="Drawable.h" />
+    <ClInclude Include="Font.h" />
+    <ClInclude Include="Fps.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="IOnClickListener.h" />
+    <ClInclude Include="IOnSceneChangedListener.h" />
+    <ClInclude Include="Looper.h" />
+    <ClInclude Include="MenuButton.h" />
+    <ClInclude Include="Pos.h" />
+    <ClInclude Include="TouchEvent.h" />
+    <ClInclude Include="Parameter.h" />
+    <ClInclude Include="SystemMain.h" />
+    <ClInclude Include="Task.h" />
+    <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="View.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0a5cb327-8447-4d67-a6f2-617a74345b5f}</ProjectGuid>
     <Keyword>Android</Keyword>
@@ -218,9 +253,6 @@
       <LibraryDependencies>%(LibraryDependencies);GLESv1_CM;EGL;stdc++;GLESv2;OpenSLES;m;DxLib;DxUseCLib;jpeg;png;zlib;tiff;theora_static;vorbis_static;vorbisfile_static;ogg_static;bullet;opus</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

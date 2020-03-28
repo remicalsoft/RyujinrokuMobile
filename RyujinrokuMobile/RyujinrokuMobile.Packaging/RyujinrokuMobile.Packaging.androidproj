@@ -119,6 +119,10 @@
     </AntPackage>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Content Include="assets\menu.back.png" />
+    <Content Include="assets\menu.button_left.png" />
+    <Content Include="assets\menu.button_middle.png" />
+    <Content Include="assets\menu.button_right.png" />
     <Content Include="res\values\strings.xml" />
     <AntBuildXml Include="build.xml" />
     <AndroidManifest Include="AndroidManifest.xml" />
