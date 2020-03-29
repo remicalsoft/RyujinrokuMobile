@@ -3,9 +3,13 @@
 
 void Image::load()
 {
-    _menuButtonLeft   = myLoadGraph("menu.button_left.png");
-    _menuButtonMiddle = myLoadGraph("menu.button_middle.png");
-    _menuButtonRight  = myLoadGraph("menu.button_right.png");
+    _menuButtonLeft             = myLoadGraph("menu.button_left.png");
+    _menuButtonMiddle           = myLoadGraph("menu.button_middle.png");
+    _menuButtonRight            = myLoadGraph("menu.button_right.png");
+    _menuButtonLeftPressed      = myLoadGraph("menu.button_left_pressed.png");
+    _menuButtonMiddlePressed    = myLoadGraph("menu.button_middle_pressed.png");
+    _menuButtonRightPressed     = myLoadGraph("menu.button_right_pressed.png");
+
     //_player       = myLoadGraph("../dat/image/player/body/seishi0.png");
     //_board        = myLoadGraph("../dat/image/board/board.png");
     //_fusuma       = myLoadGraph("../dat/image/background/01/fusuma.png");

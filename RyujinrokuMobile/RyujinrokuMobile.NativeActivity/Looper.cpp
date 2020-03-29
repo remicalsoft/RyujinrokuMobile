@@ -12,6 +12,7 @@ using namespace std;
 Looper::Looper()
 {
     _context = make_shared<Context>(Image::getIns(), TouchEvent::getIns(), Font::getIns());
+    _fps = make_unique<Fps>(_context);
     Image::getIns()->load();
     Font::getIns()->load();
     Parameter parameter;
@@ -26,8 +27,8 @@ bool Looper::loop()
     TouchEvent::getIns()->update(); //タッチイベントの更新
     _sceneStack.top()->update();    //スタックのトップのシーンを更新
     _sceneStack.top()->draw();      //スタックのトップのシーンを描画
-    _fps.draw();                    //FPSの表示
-    _fps.wait();                    //設定したFPSになるように待機
+    _fps->draw();                    //FPSの表示
+    _fps->update();                  //設定したFPSになるように待機
     return true;
 }
 

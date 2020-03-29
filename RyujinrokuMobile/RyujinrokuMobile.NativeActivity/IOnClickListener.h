@@ -7,6 +7,6 @@ class IOnClickListener
 public:
     IOnClickListener() = default;
     virtual ~IOnClickListener() = default;
-    virtual void onClick(View view) = 0;
+    virtual void onClick(View* view) = 0;
 };
 

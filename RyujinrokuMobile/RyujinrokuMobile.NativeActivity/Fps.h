@@ -1,13 +1,14 @@
 #pragma once
 
 #include <list>
+#include "Drawable.h"
 
-class Fps {
+class Fps : public Drawable {
 
 public:
-    Fps();
-    void wait();
-    void draw() const;
+    Fps(std::shared_ptr<Context> context);
+    bool update() override ;
+    void draw() const override ;
 
 private:
     std::list<int> _list;

@@ -13,6 +13,7 @@ public:
     void release();
 
     int _menuButtonLeft, _menuButtonMiddle, _menuButtonRight;
+    int _menuButtonLeftPressed, _menuButtonMiddlePressed, _menuButtonRightPressed;
     int _player;
     int _board;
     int _fusuma, _floor;

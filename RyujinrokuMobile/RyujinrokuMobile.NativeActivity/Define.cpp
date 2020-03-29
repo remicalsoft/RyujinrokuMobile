@@ -1,7 +1,7 @@
 #include "Define.h"
 
-const int Define::WIN_W = 720;        //ウィンドウサイズ横
-const int Define::WIN_H = 1520;        //ウィンドウサイズ縦
+const int Define::WIN_W = 1080;        //ウィンドウサイズ横
+const int Define::WIN_H = 2160;        //ウィンドウサイズ縦
 
 const int Define::FIELD_W = Define::WIN_W; //プレイヤーの移動領域幅
 const int Define::FIELD_H = Define::WIN_W * 4 / 3; //プレイヤーの移動領域高さ

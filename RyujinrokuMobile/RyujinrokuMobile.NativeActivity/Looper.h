@@ -17,7 +17,7 @@ public:
 
 private:
     std::stack<std::shared_ptr<AbstractScene>> _sceneStack; //シーンのスタック
-    Fps _fps;
+    std::unique_ptr<Fps> _fps;
     std::shared_ptr<Context> _context;
 };
 

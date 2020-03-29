@@ -6,9 +6,9 @@ const static int LIST_LEN_MAX = 120;	//最大120フレームで待機処理を�
 const static int FPS = 60;			    //FPS
 const static int UPINTVL = 60;		    //60フレームに一度更新する
 
-Fps::Fps():_counter(0),_fps(0){}
+Fps::Fps(std::shared_ptr<Context> context) : Drawable(context),_counter(0),_fps(0){}
 
-void Fps::wait()
+bool Fps::update()
 {
     _counter++;
     WaitTimer(getWaitTime());   //待つべき時間を取得して待つ
@@ -17,6 +17,7 @@ void Fps::wait()
         updateAverage();
         _counter = 0;
     }
+    return true;
 }
 
 void Fps::draw() const
@@ -24,7 +25,7 @@ void Fps::draw() const
     if (_fps == 0) {
         return;
     }
-    DrawFormatString(0, 0, GetColor(255, 255, 255), "%04.1ffps", _fps);
+    DrawFormatStringToHandle(0, 0, GetColor(222, 222, 222), _context->getFont()->_font24, "[%04.1f]", _fps);
 }
 
 void Fps::regist()
