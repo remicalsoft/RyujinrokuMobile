@@ -36,21 +36,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractScene.cpp" />
-    <ClCompile Include="CalcUtils.cpp" />
     <ClCompile Include="Define.cpp" />
     <ClCompile Include="Fps.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MathUtils.cpp" />
     <ClCompile Include="MenuButton.cpp" />
+    <ClCompile Include="RightParticle.cpp" />
+    <ClCompile Include="RightParticleMgr.cpp" />
+    <ClCompile Include="ShineLine.cpp" />
+    <ClCompile Include="ShineLineIn.cpp" />
+    <ClCompile Include="ShineLineMgr.cpp" />
     <ClCompile Include="TouchEvent.cpp" />
     <ClCompile Include="Parameter.cpp" />
     <ClCompile Include="SystemMain.cpp" />
-    <ClCompile Include="TitleScene.cpp" />
+    <ClCompile Include="MenuScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractScene.h" />
-    <ClInclude Include="CalcUtils.h" />
     <ClInclude Include="Context.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="Drawable.h" />
@@ -60,13 +64,19 @@
     <ClInclude Include="IOnClickListener.h" />
     <ClInclude Include="IOnSceneChangedListener.h" />
     <ClInclude Include="Looper.h" />
+    <ClInclude Include="MathUtils.h" />
     <ClInclude Include="MenuButton.h" />
     <ClInclude Include="Pos.h" />
+    <ClInclude Include="RightParticle.h" />
+    <ClInclude Include="RightParticleMgr.h" />
+    <ClInclude Include="ShineLine.h" />
+    <ClInclude Include="ShineLineIn.h" />
+    <ClInclude Include="ShineLineMgr.h" />
     <ClInclude Include="TouchEvent.h" />
     <ClInclude Include="Parameter.h" />
     <ClInclude Include="SystemMain.h" />
     <ClInclude Include="Task.h" />
-    <ClInclude Include="TitleScene.h" />
+    <ClInclude Include="MenuScene.h" />
     <ClInclude Include="View.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

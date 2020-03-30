@@ -3,36 +3,137 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SystemMain.cpp" />
-    <ClCompile Include="Define.cpp" />
     <ClCompile Include="Looper.cpp" />
-    <ClCompile Include="AbstractScene.cpp" />
     <ClCompile Include="Fps.cpp" />
-    <ClCompile Include="Parameter.cpp" />
-    <ClCompile Include="CalcUtils.cpp" />
-    <ClCompile Include="TitleScene.cpp" />
-    <ClCompile Include="TouchEvent.cpp" />
-    <ClCompile Include="Image.cpp" />
-    <ClCompile Include="MenuButton.cpp" />
+    <ClCompile Include="MenuButton.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuScene.cpp">
+      <Filter>menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchEvent.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="MathUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractScene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Define.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="Parameter.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="RightParticle.cpp">
+      <Filter>menu\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="RightParticleMgr.cpp">
+      <Filter>menu\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="ShineLineIn.cpp">
+      <Filter>menu\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="ShineLineMgr.cpp">
+      <Filter>menu\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="ShineLine.cpp">
+      <Filter>menu\Effect</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemMain.h" />
-    <ClInclude Include="Define.h" />
     <ClInclude Include="Looper.h" />
-    <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="Fps.h" />
-    <ClInclude Include="IOnSceneChangedListener.h" />
-    <ClInclude Include="Parameter.h" />
-    <ClInclude Include="CalcUtils.h" />
-    <ClInclude Include="Task.h" />
-    <ClInclude Include="Drawable.h" />
-    <ClInclude Include="TitleScene.h" />
-    <ClInclude Include="TouchEvent.h" />
-    <ClInclude Include="Pos.h" />
-    <ClInclude Include="Image.h" />
-    <ClInclude Include="MenuButton.h" />
-    <ClInclude Include="IOnClickListener.h" />
-    <ClInclude Include="View.h" />
-    <ClInclude Include="Context.h" />
-    <ClInclude Include="Font.h" />
+    <ClInclude Include="MenuButton.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuScene.h">
+      <Filter>menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Font.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchEvent.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="Context.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="IOnClickListener.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="View.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractScene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="IOnSceneChangedListener.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Parameter.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Pos.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Task.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="RightParticle.h">
+      <Filter>menu\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="RightParticleMgr.h">
+      <Filter>menu\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="ShineLineIn.h">
+      <Filter>menu\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="ShineLineMgr.h">
+      <Filter>menu\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="ShineLine.h">
+      <Filter>menu\Effect</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="menu">
+      <UniqueIdentifier>{38d62f2d-0fc5-4c47-96eb-3472f8a9e3f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Context">
+      <UniqueIdentifier>{01aa932f-3167-4517-b981-b02f8036aa33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{57d3ec85-2635-417d-92d1-bcb7022c09a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{8697b1e3-508e-418f-a1cf-5bf2152872c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{916f9c62-2451-4eb9-836c-f6c5b009f7b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{d9a92e58-831e-4a17-935b-936997cd9fef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="menu\Effect">
+      <UniqueIdentifier>{c6f54427-1600-4ef1-8363-9e5a865df7b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

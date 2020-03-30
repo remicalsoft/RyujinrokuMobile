@@ -121,6 +121,7 @@
   <ItemGroup>
     <Content Include="assets\manu.back_mask.png" />
     <Content Include="assets\menu.back.png" />
+    <Content Include="assets\menu.back_particle.png" />
     <Content Include="assets\menu.button_left.png" />
     <Content Include="assets\menu.button_left_pressed.png" />
     <Content Include="assets\menu.button_middle.png" />

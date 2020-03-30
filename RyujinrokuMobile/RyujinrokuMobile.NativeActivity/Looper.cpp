@@ -1,5 +1,5 @@
 #include "Looper.h"
-#include "TitleScene.h"
+#include "MenuScene.h"
 #include "TouchEvent.h"
 #include "Image.h"
 #include "Font.h"
@@ -16,7 +16,7 @@ Looper::Looper()
     Image::getIns()->load();
     Font::getIns()->load();
     Parameter parameter;
-    _sceneStack.push(make_shared<TitleScene>(_context, this, parameter)); //ゲーム画面シーンを作ってpush
+    _sceneStack.push(make_shared<MenuScene>(_context, this, parameter)); //ゲーム画面シーンを作ってpush
 }
 
 /*!
@@ -47,7 +47,7 @@ void Looper::onSceneChanged(const eScene scene, const Parameter& parameter, cons
     }
     switch (scene) {
     case Title:
-        _sceneStack.push(make_shared<TitleScene>(_context, this, parameter));
+        _sceneStack.push(make_shared<MenuScene>(_context, this, parameter));
         break;
     //case Game:
     //    _sceneStack.push(make_shared<GameScene>(this, parameter));

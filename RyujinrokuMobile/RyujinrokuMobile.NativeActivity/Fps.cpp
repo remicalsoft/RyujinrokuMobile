@@ -1,6 +1,6 @@
 #include <DxLib.h>
 #include "Fps.h"
-#include "CalcUtils.h"
+#include "MathUtils.h"
 
 const static int LIST_LEN_MAX = 120;	//最大120フレームで待機処理を計算する(2以上にする)
 const static int FPS = 60;			    //FPS
@@ -59,5 +59,5 @@ void Fps::updateAverage() {
     if (average == 0) {//0割り防止
         return;
     }
-    _fps = CalcUtils::roundPoint(1000 / average, 2);//小数点第2位で四捨五入する
+    _fps = MathUtils::roundPoint(1000 / average, 2);//小数点第2位で四捨五入する
 }
