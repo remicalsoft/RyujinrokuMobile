@@ -1,5 +1,6 @@
 #include "Surface.h"
 #include "Define.h"
+#include <string.h>
 
 const static float  WIDX = 40.0f;
 const static float  WIDY = 40.0f;

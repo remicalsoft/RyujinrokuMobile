@@ -4,14 +4,14 @@
 #include <memory>
 #include <array>
 #include "Surface.h"
-#include "AbstractBackground.h"
+#include "Drawable.h"
 
-class Background01 final : public AbstractBackground
+class Background01 final : public Drawable
 {
 
 public:
-    Background01();
-    ~Background01() = default;
+    Background01(std::shared_ptr<Context> context);
+    ~Background01();
     bool update() override;
     void draw() const override;
 
@@ -20,5 +20,4 @@ private:
 
     std::list<std::shared_ptr<Surface>> _list;
     std::array<int, Surface::DATANUM> _handle;
-
 };

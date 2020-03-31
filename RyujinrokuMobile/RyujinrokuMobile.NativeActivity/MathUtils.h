@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 float randf ( float val );
 float randf2( float val );

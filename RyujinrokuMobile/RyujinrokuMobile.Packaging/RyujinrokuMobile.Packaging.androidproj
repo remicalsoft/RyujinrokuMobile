@@ -119,6 +119,10 @@
     </AntPackage>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Content Include="assets\back.00_floor.png" />
+    <Content Include="assets\back.00_fusuma.png" />
+    <Content Include="assets\back.00_spell00.png" />
+    <Content Include="assets\back.00_spell01.png" />
     <Content Include="assets\manu.back_mask.png" />
     <Content Include="assets\menu.back.png" />
     <Content Include="assets\menu.back_particle.png" />
@@ -128,6 +132,7 @@
     <Content Include="assets\menu.button_middle_pressed.png" />
     <Content Include="assets\menu.button_right.png" />
     <Content Include="assets\menu.button_right_pressed.png" />
+    <Content Include="assets\player.png" />
     <Content Include="res\values\strings.xml" />
     <AntBuildXml Include="build.xml" />
     <AndroidManifest Include="AndroidManifest.xml" />

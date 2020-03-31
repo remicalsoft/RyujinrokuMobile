@@ -2,7 +2,7 @@
 
 #include "Task.h"
 
-class AbstractBackground : public Task
+class AbstractBackground : public Drawable
 {
 public:
     AbstractBackground() = default;

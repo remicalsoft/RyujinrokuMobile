@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|ARM">
@@ -36,8 +36,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractScene.cpp" />
+    <ClCompile Include="Background01.cpp" />
     <ClCompile Include="Define.cpp" />
     <ClCompile Include="Fps.cpp" />
+    <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
@@ -48,6 +50,7 @@
     <ClCompile Include="ShineLine.cpp" />
     <ClCompile Include="ShineLineIn.cpp" />
     <ClCompile Include="ShineLineMgr.cpp" />
+    <ClCompile Include="Surface.cpp" />
     <ClCompile Include="TouchEvent.cpp" />
     <ClCompile Include="Parameter.cpp" />
     <ClCompile Include="SystemMain.cpp" />
@@ -55,11 +58,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractScene.h" />
+    <ClInclude Include="Background01.h" />
     <ClInclude Include="Context.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="Drawable.h" />
     <ClInclude Include="Font.h" />
     <ClInclude Include="Fps.h" />
+    <ClInclude Include="GameScene.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="IOnClickListener.h" />
     <ClInclude Include="IOnSceneChangedListener.h" />
@@ -72,6 +77,7 @@
     <ClInclude Include="ShineLine.h" />
     <ClInclude Include="ShineLineIn.h" />
     <ClInclude Include="ShineLineMgr.h" />
+    <ClInclude Include="Surface.h" />
     <ClInclude Include="TouchEvent.h" />
     <ClInclude Include="Parameter.h" />
     <ClInclude Include="SystemMain.h" />

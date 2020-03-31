@@ -1,6 +1,5 @@
-#include "Background01.h"
+﻿#include "Background01.h"
 #include "Define.h"
-#include "Image.h"
 #include <DxLib.h>
 
 using namespace std;
@@ -8,10 +7,10 @@ using namespace std;
 const static int START_N = -1;
 const static int END_N = 7;
 
-Background01::Background01() 
+Background01::Background01(shared_ptr<Context> context) : Drawable(context)
 {
-    _handle[0] = Image::getIns()->getFusuma();
-    _handle[1] = Image::getIns()->getFloor();
+    _handle[0] = LoadGraph("back.00_fusuma.png");
+    _handle[1] = LoadGraph("back.00_floor.png");
     _handle[2] = _handle[0];
     _handle[3] = 0;
     for (int t = 0; t<Surface::DATANUM; t++) {
@@ -37,6 +36,13 @@ Background01::Background01()
         SetMaterialParam(Material);
         SetMaterialUseVertSpcColor(FALSE);
         SetMaterialUseVertDifColor(FALSE);
+    }
+}
+
+Background01::~Background01()
+{
+    for (auto g : _handle) {
+        DeleteGraph(g);
     }
 }
 

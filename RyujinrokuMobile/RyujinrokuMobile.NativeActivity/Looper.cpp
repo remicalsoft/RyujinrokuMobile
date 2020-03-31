@@ -3,8 +3,8 @@
 #include "TouchEvent.h"
 #include "Image.h"
 #include "Font.h"
+#include "GameScene.h"
 //#include "Error.h"
-//#include "GameScene.h"
 //#include "Macro.h"
 
 using namespace std;
@@ -16,7 +16,7 @@ Looper::Looper()
     Image::getIns()->load();
     Font::getIns()->load();
     Parameter parameter;
-    _sceneStack.push(make_shared<MenuScene>(_context, this, parameter)); //ゲーム画面シーンを作ってpush
+    _sceneStack.push(make_shared<GameScene>(_context, this, parameter)); //ゲーム画面シーンを作ってpush
 }
 
 /*!
@@ -49,9 +49,9 @@ void Looper::onSceneChanged(const eScene scene, const Parameter& parameter, cons
     case Title:
         _sceneStack.push(make_shared<MenuScene>(_context, this, parameter));
         break;
-    //case Game:
-    //    _sceneStack.push(make_shared<GameScene>(this, parameter));
-    //    break;
+    case Game:
+        _sceneStack.push(make_shared<GameScene>(_context, this, parameter));
+        break;
     default:
 //      ERR("あるはずのないシーンが呼ばれました");
         break;

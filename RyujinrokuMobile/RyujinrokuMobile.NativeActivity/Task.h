@@ -1,11 +1,11 @@
 #pragma once
 
-// ƒtƒŒ[ƒ€‚²‚Æ‚ÉXV‚·‚éƒNƒ‰ƒX‚Í‘S‚Ä‚ÌƒNƒ‰ƒX‚ğŒp³‚·‚é
+// ãƒ•ãƒ¬ãƒ¼ãƒ ã”ã¨ã«æ›´æ–°ã™ã‚‹ã‚¯ãƒ©ã‚¹ã¯å…¨ã¦ã®ã‚¯ãƒ©ã‚¹ã‚’ç¶™æ‰¿ã™ã‚‹
 class Task {
 
 public:
     Task() = default;
     virtual ~Task() = default;
-    virtual bool update()     = 0; //•Ô‚è’l true=³íI—¹ false=‚±‚êˆÈãXV•s—v
+    virtual bool update()     = 0; //è¿”ã‚Šå€¤ true=æ­£å¸¸çµ‚äº† false=ã“ã‚Œä»¥ä¸Šæ›´æ–°ä¸è¦
 
 };
