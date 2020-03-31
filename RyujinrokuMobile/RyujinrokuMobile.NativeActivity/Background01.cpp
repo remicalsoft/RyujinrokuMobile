@@ -21,7 +21,7 @@ Background01::Background01(shared_ptr<Context> context) : Drawable(context)
     {
         SetCameraNearFar(1.0f, 10000.f);		//カメラの有効範囲を設定
         SetCameraScreenCenter(Define::FIELD_W / 2.f, Define::FIELD_H / 2.f);
-        SetCameraPositionAndTarget_UpVecY(VGet(0.0f, 0.0f, -100.0f), VGet(0.0f, 0.0f, 0.0f));
+        SetCameraPositionAndTarget_UpVecY(VGet(0.0f, 0.0f, -100.0f), VGet(0.0f, 20.0f, 0.0f));
         SetFogEnable(TRUE);
         SetFogColor(0, 0, 0);
         SetFogStartEnd(0.0f, 300.0f);

@@ -1,7 +1,16 @@
 #include "Board.h"
 #include "Define.h"
 #include <DxLib.h>
-#include "Image.h"
+
+Board::Board(std::shared_ptr<Context> context) : Drawable(context)
+{
+    _img = LoadGraph("game.board.png");
+}
+
+Board::~Board()
+{
+    DeleteGraph(_img);
+}
 
 bool Board::update()
 {
@@ -10,5 +19,5 @@ bool Board::update()
 
 void Board::draw() const
 {
-    DrawGraph(Define::FIELD_W, 0, Image::getIns()->getBoard(), TRUE);
+    DrawGraph(0, Define::FIELD_H, _img, FALSE);
 }

@@ -53,6 +53,9 @@
     <ClCompile Include="Surface.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemMain.h" />
@@ -128,6 +131,9 @@
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="Surface.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.h">
       <Filter>Game</Filter>
     </ClInclude>
   </ItemGroup>

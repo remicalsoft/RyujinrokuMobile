@@ -123,6 +123,7 @@
     <Content Include="assets\back.00_fusuma.png" />
     <Content Include="assets\back.00_spell00.png" />
     <Content Include="assets\back.00_spell01.png" />
+    <Content Include="assets\game.board.png" />
     <Content Include="assets\manu.back_mask.png" />
     <Content Include="assets\menu.back.png" />
     <Content Include="assets\menu.back_particle.png" />

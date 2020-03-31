@@ -37,6 +37,7 @@
   <ItemGroup>
     <ClCompile Include="AbstractScene.cpp" />
     <ClCompile Include="Background01.cpp" />
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="Define.cpp" />
     <ClCompile Include="Fps.cpp" />
     <ClCompile Include="GameScene.cpp" />
@@ -59,6 +60,7 @@
   <ItemGroup>
     <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="Background01.h" />
+    <ClInclude Include="Board.h" />
     <ClInclude Include="Context.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="Drawable.h" />
