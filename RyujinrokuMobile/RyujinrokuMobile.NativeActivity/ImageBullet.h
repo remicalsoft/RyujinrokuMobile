@@ -24,42 +24,44 @@ public:
     virtual ~ImageBullet() {}
     void load() {}
 
-    enum eBulletType {
-        eSmall,		//0
-        eBarrier,	//1
-        eSparkSmall,//2
-        eKome,		//3
-        eUmaibo,	//4
-        eSparkBig,	//5
-        eKodama,	//6
-        eYosei,		//7
-        eRing,		//8
-        eAme,		//9
-        eTama,		//10
-        eOdama,		//11
-        eLaser,		//12
-        eOfuda,		//13
-        eStar,		//14
-        eRain,		//15
-        eRainbow,	//16
-        eTypeNum,
-    };
-
-    enum eBulletColor {
-        eBlue,
-        ePurple,
-        ePink,
-        eOrenge,
-        eYellow,
-        eGreen,
-        eLime,
-        eAqua,
-        eColorNum,
-    };
+ 
 
 private:
     std::vector<int*> _list;
     std::vector<Size*> _sizeList;
 
     void myLoadDivGraph(const char* fname);
+};
+
+enum eBulletType {
+    eSmall,		//0
+    eBarrier,	//1
+    eSparkSmall,//2
+    eKome,		//3
+    eUmaibo,	//4
+    eSparkBig,	//5
+    eKodama,	//6
+    eYosei,		//7
+    eRing,		//8
+    eAme,		//9
+    eTama,		//10
+    eOdama,		//11
+    eLaser,		//12
+    eOfuda,		//13
+    eStar,		//14
+    eRain,		//15
+    eRainbow,	//16
+    eTypeNum,
+};
+
+enum eBulletColor {
+    eBlue,
+    ePurple,
+    ePink,
+    eOrenge,
+    eYellow,
+    eGreen,
+    eLime,
+    eAqua,
+    eColorNum,
 };

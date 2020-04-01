@@ -12,12 +12,11 @@ using namespace std;
 
 Looper::Looper()
 {
-//    _context = make_shared<Context>(Image::getIns(), TouchEvent::getIns(), Font::getIns(), ImageBullet::getIns());
-    _context = make_shared<Context>(Image::getIns(), TouchEvent::getIns(), Font::getIns());
+    _context = make_shared<Context>(Image::getIns(), TouchEvent::getIns(), Font::getIns(), ImageBullet::getIns());
     _fps = make_unique<Fps>(_context);
     Image::getIns()->load();
     Font::getIns()->load();
-    //ImageBullet::getIns()->load();
+    ImageBullet::getIns()->load();
     Parameter parameter;
     _sceneStack.push(make_shared<GameScene>(_context, this, parameter)); //ゲーム画面シーンを作ってpush
 }

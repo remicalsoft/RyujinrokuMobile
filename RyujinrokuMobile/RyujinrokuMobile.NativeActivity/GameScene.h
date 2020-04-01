@@ -28,6 +28,6 @@ private:
     std::shared_ptr<Drawable> _background;
     //std::shared_ptr<AbstractBackground> _backgroundSpell;
     //std::shared_ptr<EnemyManager> _enemyMgr;
-//    std::shared_ptr<Barrage> _bossBarrage;
+    std::shared_ptr<Barrage> _bossBarrage;
 };
 

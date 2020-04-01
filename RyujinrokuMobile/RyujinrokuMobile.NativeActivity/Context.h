@@ -3,18 +3,17 @@
 #include "TouchEvent.h"
 #include "Image.h"
 #include "Font.h"
-//#include "ImageBullet.h"
+#include "ImageBullet.h"
 
 class Context final {
 
 public:
     Context() = delete;
-//  Context(Image* image, TouchEvent* touchEvent, Font* font, ImageBullet* imageBullet) {
-    Context(Image* image, TouchEvent* touchEvent, Font* font) {
+    Context(Image* image, TouchEvent* touchEvent, Font* font, ImageBullet* imageBullet) {
         _image = image;
         _touchEvent = touchEvent;
         _font = font;
-//        _imageBullet = imageBullet;
+        _imageBullet = imageBullet;
     }
     Image* getImage() {
         return _image;
@@ -25,14 +24,14 @@ public:
     Font* getFont() {
         return _font;
     }
-  /*  ImageBullet* getImageBullet() {
+    ImageBullet* getImageBullet() {
         return _imageBullet;
-    }*/
+    }
 
 private:
     Image* _image;
     TouchEvent* _touchEvent;
     Font* _font;
-    //ImageBullet* _imageBullet;
+    ImageBullet* _imageBullet;
 
 };
