@@ -3,6 +3,7 @@
 #include <math.h>
 
 #define PI M_PI
+#define PI2 (M_PI*2)
 
 class Define final {
 

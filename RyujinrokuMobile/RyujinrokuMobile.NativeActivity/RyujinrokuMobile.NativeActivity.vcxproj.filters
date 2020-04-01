@@ -56,6 +56,24 @@
     <ClCompile Include="Board.cpp">
       <Filter>Game</Filter>
     </ClCompile>
+    <ClCompile Include="Barrage.cpp">
+      <Filter>Game\Barrage</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrageBoss.cpp">
+      <Filter>Game\Barrage</Filter>
+    </ClCompile>
+    <ClCompile Include="BarrageNormal01.cpp">
+      <Filter>Game\Barrage</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Game\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageBullet.cpp">
+      <Filter>Game\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Error.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemMain.h" />
@@ -136,6 +154,30 @@
     <ClInclude Include="Board.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClInclude Include="Barrage.h">
+      <Filter>Game\Barrage</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrageBoss.h">
+      <Filter>Game\Barrage</Filter>
+    </ClInclude>
+    <ClInclude Include="BarrageNormal.h">
+      <Filter>Game\Barrage</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Game\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="IPlayerInfoGettable.h">
+      <Filter>Game\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageBullet.h">
+      <Filter>Game\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Macro.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Error.h">
+      <Filter>common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="menu">
@@ -161,6 +203,15 @@
     </Filter>
     <Filter Include="Game">
       <UniqueIdentifier>{3cbf311a-ea1f-48c3-a99e-6c2bab471db5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Barrage">
+      <UniqueIdentifier>{49b60098-f2a3-4804-bda9-2e5d0fe8baf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Bullet">
+      <UniqueIdentifier>{e5fc5af6-8af3-4e99-9ed2-33b2a7e2dafe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Interfaces">
+      <UniqueIdentifier>{5a77fffc-18bd-4238-8b8f-fcf98ff680a3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

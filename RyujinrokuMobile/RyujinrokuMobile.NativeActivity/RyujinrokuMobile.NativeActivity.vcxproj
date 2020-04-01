@@ -37,11 +37,17 @@
   <ItemGroup>
     <ClCompile Include="AbstractScene.cpp" />
     <ClCompile Include="Background01.cpp" />
+    <ClCompile Include="Barrage.cpp" />
+    <ClCompile Include="BarrageBoss.cpp" />
+    <ClCompile Include="BarrageNormal01.cpp" />
     <ClCompile Include="Board.cpp" />
+    <ClCompile Include="Bullet.cpp" />
     <ClCompile Include="Define.cpp" />
+    <ClCompile Include="Error.cpp" />
     <ClCompile Include="Fps.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Image.cpp" />
+    <ClCompile Include="ImageBullet.cpp" />
     <ClCompile Include="Looper.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MathUtils.cpp" />
@@ -60,17 +66,25 @@
   <ItemGroup>
     <ClInclude Include="AbstractScene.h" />
     <ClInclude Include="Background01.h" />
+    <ClInclude Include="Barrage.h" />
+    <ClInclude Include="BarrageBoss.h" />
+    <ClInclude Include="BarrageNormal.h" />
     <ClInclude Include="Board.h" />
+    <ClInclude Include="Bullet.h" />
     <ClInclude Include="Context.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="Drawable.h" />
+    <ClInclude Include="Error.h" />
     <ClInclude Include="Font.h" />
     <ClInclude Include="Fps.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Image.h" />
+    <ClInclude Include="ImageBullet.h" />
     <ClInclude Include="IOnClickListener.h" />
     <ClInclude Include="IOnSceneChangedListener.h" />
+    <ClInclude Include="IPlayerInfoGettable.h" />
     <ClInclude Include="Looper.h" />
+    <ClInclude Include="Macro.h" />
     <ClInclude Include="MathUtils.h" />
     <ClInclude Include="MenuButton.h" />
     <ClInclude Include="Pos.h" />

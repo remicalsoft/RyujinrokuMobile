@@ -1,8 +1,9 @@
 #include "ImageBullet.h"
 #include "Macro.h"
 
+
 const float WEIGHT = 0.71;
-const float BULLET_RANGE[] = {
+const float ImageBullet::RANGE[] = {
     5.5f * WEIGHT,//Small
     4.0f * WEIGHT,//Barrier
     4.0f * WEIGHT,//SparkSmall
@@ -22,7 +23,7 @@ const float BULLET_RANGE[] = {
     9.0f * WEIGHT,//Rainbow
 };
 
-const float BULLET_SORT[] = {
+const float ImageBullet::SORT_Z[] = {
     3,//Small
     4,//Barrier
     4,//SparkSmall
@@ -61,23 +62,23 @@ ImageBullet::ImageBullet()
     _sizeList.push_back(new Size(34, 34));//14
     _sizeList.push_back(new Size(20, 34));//15
     _sizeList.push_back(new Size(20, 20));//16
-    myLoadDivGraph("dat/image/bullet/00.small.png");
-    myLoadDivGraph("dat/image/bullet/01.barrier.png");
-    myLoadDivGraph("dat/image/bullet/02.sparkSmall.png");
-    myLoadDivGraph("dat/image/bullet/03.kome.png");
-    myLoadDivGraph("dat/image/bullet/04.umaibo.png");
-    myLoadDivGraph("dat/image/bullet/05.sparkBig.png");
-    myLoadDivGraph("dat/image/bullet/06.kodama.png");
-    myLoadDivGraph("dat/image/bullet/07.yosei.png");
-    myLoadDivGraph("dat/image/bullet/08.ring.png");
-    myLoadDivGraph("dat/image/bullet/09.ame.png");
-    myLoadDivGraph("dat/image/bullet/10.tama.png");
-    myLoadDivGraph("dat/image/bullet/11.odama.png");
-    myLoadDivGraph("dat/image/bullet/12.laser.png");
-    myLoadDivGraph("dat/image/bullet/13.ofuda.png");
-    myLoadDivGraph("dat/image/bullet/14.star.png");
-    myLoadDivGraph("dat/image/bullet/15.rain.png");
-    myLoadDivGraph("dat/image/bullet/16.rainbow.png");
+    myLoadDivGraph("bullet/00.small.png");
+    myLoadDivGraph("bullet/01.barrier.png");
+    myLoadDivGraph("bullet/02.sparkSmall.png");
+    myLoadDivGraph("bullet/03.kome.png");
+    myLoadDivGraph("bullet/04.umaibo.png");
+    myLoadDivGraph("bullet/05.sparkBig.png");
+    myLoadDivGraph("bullet/06.kodama.png");
+    myLoadDivGraph("bullet/07.yosei.png");
+    myLoadDivGraph("bullet/08.ring.png");
+    myLoadDivGraph("bullet/09.ame.png");
+    myLoadDivGraph("bullet/10.tama.png");
+    myLoadDivGraph("bullet/11.odama.png");
+    myLoadDivGraph("bullet/12.laser.png");
+    myLoadDivGraph("bullet/13.ofuda.png");
+    myLoadDivGraph("bullet/14.star.png");
+    myLoadDivGraph("bullet/15.rain.png");
+    myLoadDivGraph("bullet/16.rainbow.png");
 }
 
 /*!

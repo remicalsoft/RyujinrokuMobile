@@ -14,6 +14,16 @@ public:
 class ImageBullet final : public Singleton<ImageBullet> {
 
 public:
+    int get(unsigned int type, unsigned int color) const;
+    const Size* getSize(unsigned int type) const;
+
+    const static float RANGE[];
+    const static float SORT_Z[];
+
+    ImageBullet();
+    virtual ~ImageBullet() {}
+    void load() {}
+
     enum eBulletType {
         eSmall,		//0
         eBarrier,	//1
@@ -47,18 +57,9 @@ public:
         eColorNum,
     };
 
-    const static float RANGE[];
-    const static float SORT_Z[];
-
-    ImageBullet();
-    virtual ~ImageBullet() {}
-
 private:
     std::vector<int*> _list;
     std::vector<Size*> _sizeList;
 
-    void load() {}
     void myLoadDivGraph(const char* fname);
-    int get(unsigned int type, unsigned int color) const;
-    const Size* getSize(unsigned int type) const;
 };
